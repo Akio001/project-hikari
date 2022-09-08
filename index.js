@@ -96,7 +96,7 @@ client.slashCommands = new Collection();
 
 client.on("ready", () => {
     console.log(`${client.user.tag} is online.`)
-    client.user.setActivity(`${prefix}help | Under Development`)
+    client.user.setActivity(`${prefix}help | Under Development | ${client.guilds.cache.size} servers`)
 });
 
 client.login(TOKEN)
